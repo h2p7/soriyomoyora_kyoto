@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画『声よ集まれ』京都上映会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        /* トップの背景画像設定。アップロードされたビラの写真を使用します。 */
+        .hero-bg {
+            background-image: url('http://googleusercontent.com/file_content/0');
+            background-size: cover;
+            background-position: center center; /* 画像の中央が表示されるように調整 */
+        }
+        .gradient-overlay {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
+        }
+        .btn-glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.6), 0 0 25px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 1), 0 0 40px rgba(59, 130, 246, 0.6);
+            transform: scale(1.05);
+        }
+        .text-shadow-custom {
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="relative h-[60vh] md:h-[80vh] min-h-[400px] flex items-end justify-center text-center hero-bg">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        <div class="relative z-10 p-8">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight text-white text-shadow-custom">
+                ウタゴエヨ、オコレ。
+            </h1>
+            <p class="mt-4 text-lg md:text-2xl font-semibold text-white text-shadow-custom">
+                映画『声よ集まれ』京都上映会
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Introduction -->
+        <section class="text-center max-w-4xl mx-auto">
+            <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                「祈りのシンフォニー」の朴英二監督が新たに描く、悲しみと喜びに溢れたドキュメンタリー映画。
+            </p>
+            <p class="mt-4 text-lg md:text-xl leading-relaxed text-gray-700">
+                この上映会は、創立60周年を迎える京都朝鮮第二初級学校の校舎改修工事の費用を支援するためのチャリティーイベントです。
+            </p>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="text-center my-12 md:my-16">
+            <a href="https://peatix.com/event/4413626?lang=ja-jp" target="_blank" class="inline-block bg-blue-600 text-white font-bold text-xl md:text-2xl py-4 px-12 rounded-full btn-glow">
+                チケットを申し込む
+            </a>
+            <p class="mt-4 text-gray-600">前売り: 1,500円 / 当日: 1,800円</p>
+        </section>
+
+        <!-- Special Features Section -->
+        <section class="my-12 md:my-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-blue-800">本上映会だけの特別企画</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Feature 1: Student Performance -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-center text-blue-700">朝鮮学校生徒による特別公演</h3>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        【午前の部限定】<br>
+                        未来への希望をのせた歌声が響き渡ります。京都朝鮮中高級学校声楽部の生徒たちによる、この日のための特別なステージです。心揺さぶる歌声とパフォーマンスを、ぜひ会場で体感してください。
+                    </p>
+                </div>
+                <!-- Feature 2: Director's Talk Show -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-center text-blue-700">監督アフタートーク</h3>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        【各回上映後】<br>
+                        上映後には、朴英二監督と京都朝鮮第二初級学校の金隆太校長によるアフタートークを開催します。制作秘話や映画に込めた想いなど、ここでしか聞けない貴重な話をお届けします。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details -->
+        <section id="details" class="bg-white rounded-xl p-8 md:p-12 my-12 md:my-20 max-w-4xl mx-auto border border-gray-200 shadow-xl">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">開催概要</h2>
+            <div class="space-y-6 text-lg">
+                <div class="flex items-start">
+                    <span class="w-8 h-8 mr-4 mt-1 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0h18M12 12.75h.008v.008H12v-.008Z" /></svg>
+                    </span>
+                    <div>
+                        <h3 class="font-bold">日時</h3>
+                        <p class="text-gray-600">2025年7月26日(土)</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                     <span class="w-8 h-8 mr-4 mt-1 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    </span>
+                    <div>
+                        <h3 class="font-bold">時間</h3>
+                        <p class="text-gray-600">[午前の部] 10:15開始 / 10:30上映 (10:00受付)</p>
+                        <p class="text-gray-600">[午後の部] 18:15開始 / 18:30上映 (18:00受付)</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <span class="w-8 h-8 mr-4 mt-1 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+                    </span>
+                    <div>
+                        <h3 class="font-bold">場所</h3>
+                        <p class="text-gray-600">同志社大学 寒梅館ハーディーホール</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                     <span class="w-8 h-8 mr-4 mt-1 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-12v.75m0 3v.75m0 3v.75m0 3V18m-3 .75h18A2.25 2.25 0 0 0 3 16.5V7.5A2.25 2.25 0 0 0 .75 5.25h18A2.25 2.25 0 0 0 21 7.5v9a2.25 2.25 0 0 0-2.25 2.25H2.25A2.25 2.25 0 0 0 0 16.5v-9a2.25 2.25 0 0 0 2.25-2.25h1.5" /></svg>
+                    </span>
+                    <div>
+                        <h3 class="font-bold">料金</h3>
+                        <p class="text-gray-600">前売り券: 1,500円 / 当日券: 1,800円</p>
+                        <p class="text-sm text-gray-500">※京都朝鮮中高級学校生徒は無料招待(希望制)</p>
+                    </div>
+                </div>
+                 <div class="flex items-start">
+                     <span class="w-8 h-8 mr-4 mt-1 text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m-7.5-2.962A3 3 0 0 1 9 15.75v-1.5" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 18.75a9.094 9.094 0 0 1-3.741-.479 3 3 0 0 1-4.682-2.72M6.75 15.75v-1.5" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 0 1 6 0v8.25a3 3 0 0 1-3 3Z" /></svg>
+                    </span>
+                    <div>
+                        <h3 class="font-bold">託児所のご案内 (午前の部のみ)</h3>
+                        <p class="text-gray-600">託児所をご利用いただけます。ご希望の方はお早めにお申し込みください。</p>
+                        <p class="text-sm text-gray-500">申請締切: 7月12日(土) / 申請先: 090-4804-3234 (担当: チョン)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Schedule -->
+        <section class="my-12 md:my-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-blue-800">タイムスケジュール</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Morning Session -->
+                <div class="bg-white rounded-xl p-8 border-2 border-blue-500 shadow-lg">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-blue-700">午前の部</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex"><span class="font-bold w-24">10:15〜</span><span>あいさつ・趣旨説明</span></li>
+                        <li class="flex"><span class="font-bold w-24">10:20〜</span><span>特別演目 (京都朝鮮中高級学校 声楽部, 京都朝鮮歌舞団)</span></li>
+                        <li class="flex"><span class="font-bold w-24">10:30〜</span><span>映画『声よ集まれ』上映 (95分)</span></li>
+                        <li class="flex"><span class="font-bold w-24">12:05〜</span><span>アフタートーク (朴英二監督, 金隆太校長)</span></li>
+                        <li class="flex"><span class="font-bold w-24">12:30</span><span>終了予定</span></li>
+                    </ul>
+                </div>
+                <!-- Afternoon Session -->
+                <div class="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-blue-700">午後の部</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex"><span class="font-bold w-24">18:15〜</span><span>あいさつ・趣旨説明</span></li>
+                        <li class="flex"><span class="font-bold w-24">18:20〜</span><span>特別演目 (京都朝鮮歌舞団)</span></li>
+                        <li class="flex"><span class="font-bold w-24">18:30〜</span><span>映画『声よ集まれ』上映 (95分)</span></li>
+                        <li class="flex"><span class="font-bold w-24">20:05〜</span><span>アフタートーク (朴英二監督, 金隆太校長)</span></li>
+                        <li class="flex"><span class="font-bold w-24">20:30</span><span>終了予定</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-blue-100 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-bold text-lg mb-2">主催・共催</p>
+            <p>主催：同志社コリア研究センター</p>
+            <p class="mt-2 text-sm text-blue-200">
+                共催：朝鮮学校への『高校無償化』『幼保無償化』適用を求める火曜アクションin京都 | 
+                朝鮮学校オモニ会京都府連絡会 | 
+                朝鮮学校と民族教育の発展をめざす会・京滋(こっぽんおり)
+            </p>
+            <p class="mt-6 text-sm text-blue-300">© 2025 映画『声よ集まれ』京都上映会実行委員会</p>
+        </div>
+    </footer>
+
+</body>
+</html>
